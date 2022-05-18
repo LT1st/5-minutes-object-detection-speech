@@ -1,0 +1,148 @@
+@inproceedings{origin,
+  author    = {unknown},
+  title     = {Thu Beamer Theme},
+  year      = {2015},
+  url       = {http://far.tooold.cn/post/latex/beamertsinghua},
+}
+
+
+@misc{focal,
+	title = {Focal {Loss} for {Dense} {Object} {Detection}},
+	url = {http://arxiv.org/abs/1708.02002},
+	abstract = {The highest accuracy object detectors to date are based on a two-stage approach popularized by R-CNN, where a classiﬁer is applied to a sparse set of candidate object locations. In contrast, one-stage detectors that are applied over a regular, dense sampling of possible object locations have the potential to be faster and simpler, but have trailed the accuracy of two-stage detectors thus far. In this paper, we investigate why this is the case. We discover that the extreme foreground-background class imbalance encountered during training of dense detectors is the central cause. We propose to address this class imbalance by reshaping the standard cross entropy loss such that it down-weights the loss assigned to well-classiﬁed examples. Our novel Focal Loss focuses training on a sparse set of hard examples and prevents the vast number of easy negatives from overwhelming the detector during training. To evaluate the effectiveness of our loss, we design and train a simple dense detector we call RetinaNet. Our results show that when trained with the focal loss, RetinaNet is able to match the speed of previous one-stage detectors while surpassing the accuracy of all existing state-of-the-art two-stage detectors. Code is at: https://github.com/facebookresearch/Detectron.},
+	language = {en},
+	urldate = {2022-05-14},
+	publisher = {arXiv},
+	author = {Lin, Tsung-Yi and Goyal, Priya and Girshick, Ross and He, Kaiming and Dollár, Piotr},
+	month = feb,
+	year = {2018},
+	note = {Number: arXiv:1708.02002
+arXiv:1708.02002 [cs]},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	file = {Lin 等。 - 2018 - Focal Loss for Dense Object Detection.pdf:C\:\\Users\\myPC\\Zotero\\storage\\K65NATPB\\Lin 等。 - 2018 - Focal Loss for Dense Object Detection.pdf:application/pdf},
+}
+
+@article{alexnet,
+  title={Imagenet classification with deep convolutional neural networks},
+  author={Krizhevsky, Alex and Sutskever, Ilya and Hinton, Geoffrey E},
+  journal={Advances in neural information processing systems},
+  volume={25},
+  year={2012}
+}
+
+@inproceedings{fast,
+  title={Fast r-cnn},
+  author={Girshick, Ross},
+  booktitle={Proceedings of the IEEE international conference on computer vision},
+  pages={1440--1448},
+  year={2015}
+}
+
+@misc{faster,
+	title = {Faster {R}-{CNN}: {Towards} {Real}-{Time} {Object} {Detection} with {Region} {Proposal} {Networks}},
+	shorttitle = {Faster {R}-{CNN}},
+	url = {http://arxiv.org/abs/1506.01497},
+	abstract = {State-of-the-art object detection networks depend on region proposal algorithms to hypothesize object locations. Advances like SPPnet [1] and Fast R-CNN [2] have reduced the running time of these detection networks, exposing region proposal computation as a bottleneck. In this work, we introduce a Region Proposal Network (RPN) that shares full-image convolutional features with the detection network, thus enabling nearly cost-free region proposals. An RPN is a fully convolutional network that simultaneously predicts object bounds and objectness scores at each position. The RPN is trained end-to-end to generate high-quality region proposals, which are used by Fast R-CNN for detection. We further merge RPN and Fast R-CNN into a single network by sharing their convolutional features—using the recently popular terminology of neural networks with “attention” mechanisms, the RPN component tells the uniﬁed network where to look. For the very deep VGG-16 model [3], our detection system has a frame rate of 5fps (including all steps) on a GPU, while achieving state-of-the-art object detection accuracy on PASCAL VOC 2007, 2012, and MS COCO datasets with only 300 proposals per image. In ILSVRC and COCO 2015 competitions, Faster R-CNN and RPN are the foundations of the 1st-place winning entries in several tracks. Code has been made publicly available.},
+	language = {en},
+	urldate = {2022-05-14},
+	publisher = {arXiv},
+	author = {Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+	month = jan,
+	year = {2016},
+	note = {Number: arXiv:1506.01497
+arXiv:1506.01497 [cs]},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: Extended tech report},
+	file = {Ren 等。 - 2016 - Faster R-CNN Towards Real-Time Object Detection w.pdf:C\:\\Users\\myPC\\Zotero\\storage\\RZHNABLD\\Ren 等。 - 2016 - Faster R-CNN Towards Real-Time Object Detection w.pdf:application/pdf},
+}
+
+@misc{fpn,
+	title = {Feature {Pyramid} {Networks} for {Object} {Detection}},
+	url = {http://arxiv.org/abs/1612.03144},
+	abstract = {Feature pyramids are a basic component in recognition systems for detecting objects at different scales. But recent deep learning object detectors have avoided pyramid representations, in part because they are compute and memory intensive. In this paper, we exploit the inherent multi-scale, pyramidal hierarchy of deep convolutional networks to construct feature pyramids with marginal extra cost. A topdown architecture with lateral connections is developed for building high-level semantic feature maps at all scales. This architecture, called a Feature Pyramid Network (FPN), shows signiﬁcant improvement as a generic feature extractor in several applications. Using FPN in a basic Faster R-CNN system, our method achieves state-of-the-art singlemodel results on the COCO detection benchmark without bells and whistles, surpassing all existing single-model entries including those from the COCO 2016 challenge winners. In addition, our method can run at 6 FPS on a GPU and thus is a practical and accurate solution to multi-scale object detection. Code will be made publicly available.},
+	language = {en},
+	urldate = {2022-05-14},
+	publisher = {arXiv},
+	author = {Lin, Tsung-Yi and Dollár, Piotr and Girshick, Ross and He, Kaiming and Hariharan, Bharath and Belongie, Serge},
+	month = apr,
+	year = {2017},
+	note = {Number: arXiv:1612.03144
+arXiv:1612.03144 [cs]},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+}
+
+@misc{mask,
+	title = {Mask {R}-{CNN}},
+	url = {http://arxiv.org/abs/1703.06870},
+	abstract = {We present a conceptually simple, ﬂexible, and general framework for object instance segmentation. Our approach efﬁciently detects objects in an image while simultaneously generating a high-quality segmentation mask for each instance. The method, called Mask R-CNN, extends Faster R-CNN by adding a branch for predicting an object mask in parallel with the existing branch for bounding box recognition. Mask R-CNN is simple to train and adds only a small overhead to Faster R-CNN, running at 5 fps. Moreover, Mask R-CNN is easy to generalize to other tasks, e.g., allowing us to estimate human poses in the same framework. We show top results in all three tracks of the COCO suite of challenges, including instance segmentation, boundingbox object detection, and person keypoint detection. Without bells and whistles, Mask R-CNN outperforms all existing, single-model entries on every task, including the COCO 2016 challenge winners. We hope our simple and effective approach will serve as a solid baseline and help ease future research in instance-level recognition. Code has been made available at: https://github.com/ facebookresearch/Detectron.},
+	language = {en},
+	urldate = {2022-05-14},
+	publisher = {arXiv},
+	author = {He, Kaiming and Gkioxari, Georgia and Dollár, Piotr and Girshick, Ross},
+	month = jan,
+	year = {2018},
+	note = {Number: arXiv:1703.06870
+arXiv:1703.06870 [cs]},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: open source; appendix on more results},
+	file = {He 等。 - 2018 - Mask R-CNN.pdf:C\:\\Users\\myPC\\Zotero\\storage\\WH8YR4E5\\He 等。 - 2018 - Mask R-CNN.pdf:application/pdf},
+}
+
+@misc{yolov3,
+	title = {{YOLOv3}: {An} {Incremental} {Improvement}},
+	shorttitle = {{YOLOv3}},
+	url = {http://arxiv.org/abs/1804.02767},
+	abstract = {We present some updates to YOLO! We made a bunch of little design changes to make it better. We also trained this new network that’s pretty swell. It’s a little bigger than last time but more accurate. It’s still fast though, don’t worry. At 320 × 320 YOLOv3 runs in 22 ms at 28.2 mAP, as accurate as SSD but three times faster. When we look at the old .5 IOU mAP detection metric YOLOv3 is quite good. It achieves 57.9 AP50 in 51 ms on a Titan X, compared to 57.5 AP50 in 198 ms by RetinaNet, similar performance but 3.8× faster. As always, all the code is online at https://pjreddie.com/yolo/.},
+	language = {en},
+	urldate = {2022-05-14},
+	publisher = {arXiv},
+	author = {Redmon, Joseph and Farhadi, Ali},
+	month = apr,
+	year = {2018},
+	note = {Number: arXiv:1804.02767
+arXiv:1804.02767 [cs]},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: Tech Report},
+	file = {Redmon 和 Farhadi - 2018 - YOLOv3 An Incremental Improvement.pdf:C\:\\Users\\myPC\\Zotero\\storage\\HX9SEZES\\Redmon 和 Farhadi - 2018 - YOLOv3 An Incremental Improvement.pdf:application/pdf},
+}
+
+@misc{fcos,
+	title = {{FCOS}: {Fully} {Convolutional} {One}-{Stage} {Object} {Detection}},
+	shorttitle = {{FCOS}},
+	url = {http://arxiv.org/abs/1904.01355},
+	abstract = {We propose a fully convolutional one-stage object detector (FCOS) to solve object detection in a per-pixel prediction fashion, analogue to semantic segmentation. Almost all state-of-the-art object detectors such as RetinaNet, SSD, YOLOv3, and Faster R-CNN rely on pre-defined anchor boxes. In contrast, our proposed detector FCOS is anchor box free, as well as proposal free. By eliminating the predefined set of anchor boxes, FCOS completely avoids the complicated computation related to anchor boxes such as calculating overlapping during training. More importantly, we also avoid all hyper-parameters related to anchor boxes, which are often very sensitive to the final detection performance. With the only post-processing non-maximum suppression (NMS), FCOS with ResNeXt-64x4d-101 achieves 44.7\% in AP with single-model and single-scale testing, surpassing previous one-stage detectors with the advantage of being much simpler. For the first time, we demonstrate a much simpler and flexible detection framework achieving improved detection accuracy. We hope that the proposed FCOS framework can serve as a simple and strong alternative for many other instance-level tasks. Code is available at:Code is available at: https://tinyurl.com/FCOSv1},
+	language = {en},
+	urldate = {2022-05-14},
+	publisher = {arXiv},
+	author = {Tian, Zhi and Shen, Chunhua and Chen, Hao and He, Tong},
+	month = aug,
+	year = {2019},
+	note = {Number: arXiv:1904.01355
+arXiv:1904.01355 [cs]},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	annote = {Comment: Accepted to Proc. Int. Conf. Computer Vision 2019. 13 pages. Code is available at: https://github.com/tianzhi0549/FCOS/},
+	file = {Tian 等。 - 2019 - FCOS Fully Convolutional One-Stage Object Detecti.pdf:C\:\\Users\\myPC\\Zotero\\storage\\89FUPV9E\\Tian 等。 - 2019 - FCOS Fully Convolutional One-Stage Object Detecti.pdf:application/pdf},
+}
+
+@inproceedings{yolo,
+  title={You only look once: Unified, real-time object detection},
+  author={Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={779--788},
+  year={2016}
+}
+
+@inproceedings{yolo9000,
+  title={YOLO9000: better, faster, stronger},
+  author={Redmon, Joseph and Farhadi, Ali},
+  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  pages={7263--7271},
+  year={2017}
+}
+
+@article{sppnet,
+  title={SPP-Net: Deep absolute pose regression with synthetic views},
+  author={Purkait, Pulak and Zhao, Cheng and Zach, Christopher},
+  journal={arXiv preprint arXiv:1712.03452},
+  year={2017}
+}
